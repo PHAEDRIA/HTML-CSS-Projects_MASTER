@@ -1,0 +1,14 @@
+body {
+    background-color: cornsilk
+    background-image: url (./img/Web_Page_Background.png);
+    color: lightslategrey;
+}
+
+.box {
+
+    background-image: url(../thumb/image/Web_Page_Background.png)
+    padding: 100px;
+    margin: 100PX;
+
+    background-repeat: repeat-x;
+}
