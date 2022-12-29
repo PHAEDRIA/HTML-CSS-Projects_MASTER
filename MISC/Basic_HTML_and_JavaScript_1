@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <font color="#0000EE">Write text here</font>
+    <script>
+        alert ("Hello World:") ;
+    </script>
+</html>

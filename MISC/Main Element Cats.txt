@@ -1,0 +1,7 @@
+<body>
+<p>Cats are interesting creatures. </p>
+<main>
+<h1> Types of felines</h1>
+<p> Lions, tigers and house cats are common examples of felines.</p>
+</main>
+<h2>Lions</h2>

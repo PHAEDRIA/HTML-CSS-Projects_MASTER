@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>KORUPTION TECH</title>
+		<meta charset="utf-8">
+		</head>
+		<body>
+		
+			<header>
+				<h3>Alternative workforce Appearance</h3>
+				<p>Meta virtual world employment on a avatar.</p>
+				<h6>Real world work, behind the avatar, gain ultimate privacy and no professional judgment on appearance!</h6>
+			</header>
+		<body>
+	<html>
