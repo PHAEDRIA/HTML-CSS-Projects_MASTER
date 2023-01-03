@@ -5,7 +5,7 @@ body    {
 h1  {
     color: rgba(red 8, green 141, blue 165, alpha 1);
     margin-left: 100px;
-    text-shadow: 1px .5px 4px rgba(red, green, blue, alpha);
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6) ;
 }
 
 .container {
@@ -21,11 +21,11 @@ SELECT ALL SQUARE IN TIME ARRAY
 SEE BELOW AND FIX
 ------------------------------------*/
 
-.container .square:nth-child(-n+4)  { 
-    background-image: url("../CSS/images/Clover.jpg")
+.container .squares:nth-child(-n+4)  { 
+    background-image: url(".CSS/images/smile_1.png")
     color: #fff;
     float: left;
-    width: left;
+    width: 100px;
     height: 100px;
     margin: 5px;
     border: 1px solid black;
@@ -34,8 +34,22 @@ SEE BELOW AND FIX
 }
 
 /* -----------------------------------
-SELECT ALL SQUARE IN TIME ARRAY 
+SELECT ALL SQUARES PARAGRAPHS IN TIME ARRAY 
 ------------------------------------*/
-.square:nth-child(-n+4) p {
+.squares:nth-child(-n+4) p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* -----------------------------------
+INDIVIDUALLY SELECT A IN TIME ARRAY 
+------------------------------------*/
+
+.squares:nth-child(1) {
+    background: #4240ff;
+
 }
