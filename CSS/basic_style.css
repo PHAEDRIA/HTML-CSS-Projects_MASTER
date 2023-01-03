@@ -53,3 +53,18 @@ INDIVIDUALLY SELECT A IN TIME ARRAY
     background: #4240ff;
 
 }
+
+.squares:nth-child(2) {
+    background: #40ff70;
+
+}
+.squares:nth-child(3) {
+    background: #e20d0d;
+
+}
+
+.squares:nth-child(4) {
+    background: #ccf537;
+
+}
+
