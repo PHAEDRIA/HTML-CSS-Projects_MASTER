@@ -83,19 +83,19 @@ HOVER, TRANSLATE & TRANFORM EFFECTS
 }
 
 .squares:nth-child(1) :hover {
-    background: #13b4ff;
+    background: #4240ff;
 }
 
 .squares:nth-child(2) :hover {
-    background: #d861af; 
+    background: #40ff70; 
 }
 
 .squares:nth-child(3) :hover {
-    background: #81205f;
+    background: #e20d0d;
 }
 
 .squares:nth-child(4) :hover {
-    background: #776800;
+    background: #ccf537;
 }
 
 /* ----------------------------------------
