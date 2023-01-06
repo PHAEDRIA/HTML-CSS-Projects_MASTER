@@ -41,6 +41,7 @@ P {
     padding-left: 20px;
     padding-right: 20px;
     justify-content: center; /*FOR CENTERING TEXT INSIDE .PHOTO*/
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .white-head {
@@ -51,7 +52,7 @@ P {
 }
 
 /*---------------------------------------
-GALLERY SECTION ANIMATION
+PHOTO OVERLAY TRANSITIONS
 ---------------------------------------*/
 
 .photo-overlay {
