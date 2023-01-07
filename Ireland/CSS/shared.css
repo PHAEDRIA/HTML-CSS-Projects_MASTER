@@ -25,8 +25,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Open Sans', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -40,7 +39,7 @@ h1 {
 
 }
 
-h1: ::after { /* This is the underline*/
+h1::after { /* This is the underline*/
     display: block;
     content: "";
     height: 2px;
@@ -74,16 +73,12 @@ p {
     padding-bottom: 15px;
 }
 
-/*Repeated below?*/
-
-p {
-    font-weight: 300;
-    line-height: 30px;
-    padding-bottom: 15px;
-}
-
 .text-center {
     text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
 }
 
 section {
@@ -110,10 +105,6 @@ section {
     margin-right: auto;
     margin-left: auto;
 }
-
-/*-----------------------------------------
-IS THIS THE ANIMATION PART? IF SO MOVE TO ANIMATIONS
--------------------------------------------*/
 
 .row {
     margin-right: -15px;
@@ -142,7 +133,7 @@ IS THIS THE ANIMATION PART? IF SO MOVE TO ANIMATIONS
 }
 
 .menu-container {
-    max-height: 30px;
+    max-height: 340px;
     margin: 0% auto;
     content: " ";
     /* Top: 0;
@@ -154,16 +145,12 @@ IS THIS THE ANIMATION PART? IF SO MOVE TO ANIMATIONS
     /*background-color: rgba(255. 255, 255, 0.5;*/
 }
 
-/*-----------------------------------------
-IS THIS THE ANIMATION PART? IF SO MOVE TO ANIMATIONS
--------------------------------------------*/
-
-/*-----------------------------------------
-HOME SECTIONS STYLES
--------------------------------------------*/
+    /*-----------------------------------------
+    HOME SECTIONS STYLES
+    ------------------------------------------- */
 
 #home {
-    background: url(../Thumb/Web_Page_Background_2.png);
+    background: url(../Thumb/Web_Page_Background_2.png) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -175,7 +162,35 @@ HOME SECTIONS STYLES
     padding-top: 350px; /* This is spacer before the Main title Logo*/
     padding-bottom: 500px; /* This is pacer after the Main title Logo*/
     color: #fff;
-
-
 }
 
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+head-last {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 20px 10px 20px;
+    border: 1px dotted #fff;
+    padding: 5px; 
+}
+
+/* PART B NEXT*/
