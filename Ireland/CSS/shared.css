@@ -36,7 +36,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #e91c1c;
-    text-shadow: 2px, 2px, 3px, rgba(0, 0, )
+    text-shadow: 2px, 2px, 3px, rgba(0, 0, 0, 0.5 ) ;
 
 }
 
@@ -45,7 +45,123 @@ h1: ::after { /* This is the underline*/
     content: "";
     height: 2px;
     width: 150px;
+    background: #e91c1c;
+    margin:5px auto 40px;
+    box-shadow: 5px 2px 3px rgba (0, 0, 0, 0.5)
+}
 
+h2 {
+    line-height: 50px;
+    color: #e91c1c;
+}
 
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
 
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+/*Repeated below?*/
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: inline-block;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*-----------------------------------------
+IS THIS THE ANIMATION PART? IF SO MOVE TO ANIMATIONS
+-------------------------------------------*/
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.clearfix ::after, /*after is now :: after with double colon*/
+.container ::after,
+.navbar ::after {
+    clear: both;
+    display: table;
+    content: " ";
+
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /*This ensures that images cannot render outside their container without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 30px;
+    margin: 0% auto;
+    content: " ";
+    /* Top: 0;
+    left 0; */
+    /* position absolute; */ /* to the top edge of the screen */
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    /*background-color: rgba(255. 255, 255, 0.5;*/
+}
+
+/*-----------------------------------------
+IS THIS THE ANIMATION PART? IF SO MOVE TO ANIMATIONS
+-------------------------------------------*/
+
+/*-----------------------------------------
+HOME SECTIONS STYLES
+-------------------------------------------*/
+
+#home {
+    background: url(../Thumb/Web_Page_Background_2);
 }
