@@ -150,7 +150,7 @@ section {
     ------------------------------------------- */
 
 #home {
-    background: url(../Thumb/Web_Page_Background_2.png) no-repeat 50% 50%;
+    background: url(../Thumb/Web_Page_Background_3.png) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -160,7 +160,7 @@ section {
     display: block;
     height: auto;
     padding-top: 350px; /* This is spacer before the Main title Logo*/
-    padding-bottom: 500px; /* This is pacer after the Main title Logo*/
+    padding-bottom: 500px; /* This is spacer after the Main title Logo*/
     color: #fff;
 }
 
@@ -188,7 +188,7 @@ section {
 head-last {
     font-size: 18px;
     font-weight: 900;
-    padding: 5px 20px 10px 20px;
+    padding: 5px 20px 20px 20px;
     border: 1px dotted #fff;
     padding: 5px; 
 }
