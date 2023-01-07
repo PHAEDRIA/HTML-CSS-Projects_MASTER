@@ -164,4 +164,18 @@ HOME SECTIONS STYLES
 
 #home {
     background: url(../Thumb/Web_Page_Background_2.png);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /* This is spacer before the Main title Logo*/
+    padding-bottom: 500px; /* This is pacer after the Main title Logo*/
+    color: #fff;
+
+
 }
+
