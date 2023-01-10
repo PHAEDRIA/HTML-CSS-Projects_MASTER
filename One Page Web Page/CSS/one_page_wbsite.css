@@ -113,6 +113,7 @@ section {
 }
 
 .clearfix ::after, /*after is now :: after with double colon*/
+.container ::after,
 .navbar ::after {
     clear: both;
     display: table;
