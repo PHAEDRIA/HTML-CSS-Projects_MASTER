@@ -18,8 +18,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-info">
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link text-light" href="#About" id="skip_navigation_link">About</a>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#About" id="skip_navigation_link">About</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link text-light" href="#Destinations" id="skip_navigation_link">Destinations</a>
@@ -54,13 +54,13 @@
                     </div>     
                     
                     <div class="col-sm">
-                        <h3>About</h3>
+                        <h3 id="About" >About</h3>
                         <p>Beautiful majestic coast of Ireland, bannered with old Irish traditions mixed with modern and new adventures.</p>
                         <p>Enjoy tours of the old Liffy river to our home made brew of the world renoun Guiness brewery</p>
                         <p>Try our pub delights;&reg; local brews and Irish music to dance the night away, our tours are disabilty &#7855;.</p>                                                                             
                     </div>
                     <div class="col">
-                       <h3>Destinations:</h3>
+                        <h3 id="Destinations">Destinations</h3>
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <a class="nav-link" href="https://www.riotgames.com/en/work-with-us/offices/dublin" target="_blank">Dublin</a>
@@ -80,7 +80,14 @@
 <!-- /ABOUT-COLUMNS -->
 
 <!-- TRAVEL TIMES -->
-        <div class="container my-5">
+        <div class="container my-3">
+            <div class="jumbotron jumbotron-fluid bg-secondary text-center">
+                <div class="container">
+                <h1 id="Tours" class="display-6 text-light">Tours</h1>
+                <p class="lead text-light">Pick a time and we will do the rest, relax and enjoy stress free trours!</p>
+                </div>
+            </div>
+           
             <div class="row">
                 <div class="col-sm-4">
                     <div class="card" style="width: 21rem;">
@@ -132,7 +139,9 @@
 
             <div class="text-center">
                 <form id="Tours">
-                    <h1 class="text-primary my-5">Sign up for Air Miles!</h1>
+                    <h1 class="text-primary my-3">Sign up for Air Miles!</h1>
+                    <img src="./Img/Airplane_1.png" alt="Paris" class="center">
+                    
                     <div class="mb-3">
                        
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
