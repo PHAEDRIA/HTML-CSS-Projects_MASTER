@@ -27,7 +27,7 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: "Trebuchet MS", monospace; color: aliceblue;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
     font-size: 20px;
@@ -92,7 +92,7 @@ img:hover {
 /* Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 /***** END OF GENERAL STYLING *****/
 
@@ -256,17 +256,17 @@ input[type=text]:hover {
 
 /* Submit button */
 input[type=submit] {
-    background-color: rgb(80, 80, 80); /* Sets the background color of the submit button to black */
+    background-color: rgb(8, 8, 8); /* Sets the background color of the submit button to black */
     color: white; /* Sets the font color of the Submit button to white */
     font-weight: bold; /* Makes the font of the submit button bold */
-    padding: 12px 20px; /* Adds padding to the submit button */
+    padding: 8px 20px; /* Adds padding to the submit button */
     border: none; /* Removes the border from the submit button */
     border-radius: 4px; /* Gives the submit button the same rounded corners as the text boxes */
     cursor: pointer; /* Changes the cursor to pointer when over the submit button */
     display: block; /* Allows the submit button to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this will center the submit button */
     margin-right: auto;
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: 'Trebuchet MS', optima; Bold;
 }
 
 /* Hover effect for submit button */
@@ -280,7 +280,7 @@ input[type=submit]:hover {
 /* Form element */
 form {
     border-radius: 5px; /* Rounds the corners of the contact form */
-    background-color: #f2f2f2; 
+    background-color: #727171; 
     padding: 10px; /* Adds padding to the contact form */
     font-family: "Trebuchet MS", Optima;
 }
