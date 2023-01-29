@@ -3,9 +3,23 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initia-sale=1">
     <title> IRISH TIMES | MAGICAL JOURNEY TO IRELAND</title>
     <link rel="stylesheet" href="./CSS/shared.css">
     <link rel="stylesheet" href="./CSS/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Nunito&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url("./Thumb/Web_Page_Background_4.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+     </style>
+    
 </head>
 
 <Body>
@@ -32,6 +46,93 @@
         </div>
     <!-- END HOME -->
 
+
+<!-----------------------------------------break-------------------------------------------------->
+    <!--LIGHTBOX-->
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+        <img src="./misc/img1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Beach Rocks">
+    </div>
+    <div class="column">
+      <img src="./misc/img2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Cliffside">
+    </div>
+    <div class="column">
+      <img src="./misc/img3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Rocky Fence">
+    </div>
+    <div class="column">
+      <img src="./misc/img4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="Jagged Rocks">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="./misc/img1_wide.png" style="width:100%" alt="">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="./misc/img2_wide.png" style="width:100%" alt="">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="./misc/img3_wide.png" style="width:100%" alt="">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="./misc/img4_wide.png" style="width:100%" alt="">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+    
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail image controls -->
+        <div class="column">
+            <img class="demo cursor" src="./misc/img1.png" style="width:100%" onclick="currentSlide(1)" alt="Beach Rocks">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./misc/img2.png" style="width:100%" onclick="currentSlide(2)" alt="Cliffside">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./misc/img3.png" style="width:100%" onclick="currentSlide(3)" alt="Rocky Fence">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./misc/img4.png" style="width:100%" onclick="currentSlide(4)" alt="Jagged Rocks">
+        </div>
+        </div>
+    </div>
+
+    <!--END LIGHTBOX-->
+
+
+<!------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
         <!--GALLERY-->
     <section id="gallery">
             <div class="container">
@@ -41,7 +142,7 @@
             <!--PHOTO CONTAINER 1-->
             <div class="photo-container">
                 <div class="photo">
-                    <img src="./Thumb/Thumbnail _1.png" alt=""> 
+                    <img src="./Thumb/Thumbnail_1.png" alt=""> 
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have many flights departing daily, book your flight now!</p>
@@ -53,7 +154,7 @@
             <!--PHOTO CONTAINER 2-->
             <div class="photo-container">
                 <div class="photo">
-                    <img src="./Thumb/Thumbnail _2.png" alt=""> 
+                    <img src="./Thumb/Thumbnail_2.png" alt=""> 
                     <div class="photo-overlay">
                         <h3 class="white-head">Click to Enlarge</h3>
                         <p>We have many flights departing daily, book your flight now!</p>
@@ -161,7 +262,7 @@
                     <br>Reserve your flight today!
                 </h2>
                 <p class="rsvp-text">
-                    Please provide us with your basic contact information.
+                    <span>provide us with your basic contact information.</span>
                 </p>
                 <div>
                     <form action="" method="post">
@@ -189,7 +290,7 @@
 <div id="footer">
     ww.irelandwelcomesyou.com &nbsp;|&nbsp; copy:2023 
 </div>
-
+<script src="../Ireland/JS/main.js"></script>
    
 </Body>
-</htm>
+</html>
