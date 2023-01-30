@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initia-sale=1">
+    <title> IRISH TIMES | MAGICAL JOURNEY TO IRELAND</title>
+    <link rel="stylesheet" href="./CSS/shared.css">
+    <link rel="stylesheet" href="./CSS/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Nunito&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url("./Thumb/Web_Page_Background_4.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+     </style>
+    
+</head>
+
+<Body>
+
+    <!-- NAV -->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home"><li>HOME</li></a>
+                <a href="#gallery"><li>GALLERY</li></a>
+                <a href="#contact"><li>RESERVATIONS</li></a>
+            </ul>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- HOME -->
+        <div id="home">
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main">Irish Memories</span>
+                </div>
+            </div>
+        </div>
+    <!-- END HOME -->
+
+
+<!-----------------------------------------break-------------------------------------------------->
+    <!--LIGHTBOX-->
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="col">
+       <img src="./misc/img1.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+    </div>
+    <div class="col">
+       <img src="./misc/img2.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+    </div>
+    <div class="col">
+       <img src="./misc/img3.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+    </div>
+  </div>
+  
+  <!-- This is your lightbox, it is contained in a modal. Here you provide all the images,
+       controls, and another set of preview images as the dots. Dots show your user which
+       image is currently active. Note that you use entities (e.g. &times;), more info on
+       them at the bottom. -->
+       
+  <div id="Lightbox" class="modal">
+    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+    <div class="modal-content">
+      <div class="slide">
+          <img src="./misc/img1.png" class="image-slide" alt="Toy car on the road." />
+      </div>
+      <div class="slide">
+          <img src="./misc/img2.png" class="image-slide" alt="Toy car exploring offroad." />
+      </div>    
+      <div class="slide">
+          <img src="./misc/img3.png" class="image-slide" alt="Toy car in the city." />
+      </div>
+    
+      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    
+      <div class="dots">
+        <div class="col">
+          <img src="./misc/img1.png" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
+        </div>
+        <div class="col">
+          <img src="./misc/img2.png" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy car exploring offroad." />
+        </div>
+        <div class="col">
+          <img src="./misc/img3.png" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy car in the city." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--END LIGHTBOX-->
+
+
+<!------------------------------------------------------------------------------------------------------------->
+
+        <!--GALLERY-->
+    <section id="gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="flex-container">
+    
+            <!--PHOTO CONTAINER 1-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_1.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">DUBLIN</h3>
+                        <h3><a href="https://www.riotgames.com/en/work-with-us/offices/dublin" target="_blank">Click to Dublin</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 1-->
+
+            <!--PHOTO CONTAINER 2-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_2.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">WATERFORD</h3>
+                        <h3><a href="https://www.ireland.com/en-ca/destinations/county/waterford/waterford-city/?ds_c=TI_CA_EN_PRO_PM_Waterford_Waterford+City_IOI_NA_NA_NA_ACP_Location-Waterford&ds_ag=Waterford%7CCore&ds_k=waterford&gclid=Cj0KCQiA-oqdBhDfARIsAO0TrGEu71mznQlSL8AhN5ret7qd0OKfQrm51_CEOv3PCqYLwYGk_C0zfFYaAoE9EALw_wcB&gclsrc=aw.ds" target="_blank">Click to Waterford</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 2-->
+
+            <!--PHOTO CONTAINER 3-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_3.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">CORK</h3>
+                        <h3><a href="https://visitwestcork.wordpress.com/recent/" target="_blank">Click to Cork</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 3-->
+
+            <!--PHOTO CONTAINER 4-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_4.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">DINGLE</h3>
+                        <h3><a href="https://visitwestcork.wordpress.com/recent/" target="_blank">Click to Dingle</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 4-->
+
+            <!--PHOTO CONTAINER 5-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_5.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">LIMERICK</h3>
+                        <h3><a href="https://kingjohnscastle.ie/" target="_blank">Click to Limerick</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 5-->
+
+            <!--PHOTO CONTAINER 6-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_6.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">GALWAY</h3>
+                        <h3><a href="https://www.discoverireland.ie/galway-city/things-to-do-rainy-day-galway-city"target="_blank">Click to Galway</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 6-->
+
+            <!--PHOTO CONTAINER 7-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_7.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">PORTRUSH</h3>
+                        <h3><a href="https://www.visitcausewaycoastandglens.com/things-to-do/whiterocks-beach-p686041"target="_blank">Click to Portrush</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 7-->
+
+            <!--PHOTO CONTAINER 8-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_8.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">WESTPORT</h3>
+                        <h3><a href="https://www.tripadvisor.com/Tourism-g186627-Westport_County_Mayo_Western_Ireland-Vacations.html"target="_blank">Click to Westport</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF CONTAINER 8-->
+
+            <!--PHOTO CONTAINER 9-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Thumb/Thumbnail_9.png" alt=""> 
+                    <div class="photo-overlay">
+                        <h3 class="white-head">BELFAST</h3>
+                        <h3><a href="https://village-estates.co.uk/blog-box-view/1454924560/1619108861/top-10-reasons-to-live-in-belfast?from_page=%2FMarket%2520Updates%3Fpage%3D6&post_width=full_width"target="_blank">Click to Belfast</a></h3>
+                        <p>Book now!</p>
+                    </div>
+                </div>
+            </div>
+    <!--END OF CONTAINER 9-->
+        </div>
+    </div>
+</section>
+<!-- END OF GALLERY -->
+
+
+<!-- RSVP -->
+<section id="contact">
+    <div class="container">
+        <div class="heading padding">
+            <h1 class="heading padding">Reservations</h1>
+            <div class="reservation">
+                <h2><span> Your adventure is just across the pond!</span>
+                    <br>Reserve your flight today!
+                </h2>
+                <p class="rsvp-text">
+                    <span>provide us with your basic contact information.</span>
+                </p>
+                <div>
+                    <form action="" method="post">
+                        <input class="rsvp" type="text" value="" placeholder="First Name">
+                        <input class="rsvp" type="text" value="" placeholder="Last Name">
+                        <input class="rsvp" type="text" value="" placeholder="Email Address">
+                        <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                        <div class="form spacer">
+                       
+                            <label class="terms">Terms and Conditions</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>                 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END RSVP -->
+
+<!-- FIGURE OUT FOOTER ON SHARED -->
+<div id="footer">
+    ww.irelandwelcomesyou.com &nbsp;|&nbsp; copy:2023 
+</div>
+<script src="../One Page Webiste 2/JS/main.js"></script>
+   
+</Body>
+</html>
