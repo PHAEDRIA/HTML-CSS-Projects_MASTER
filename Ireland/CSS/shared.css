@@ -282,7 +282,7 @@ section {
     /* position absolute; */ /* to the top edge of the screen */
     width: 100%;
     position: fixed;
-    z-index: 100;
+
     /*background-color: rgba(255. 255, 255, 0.5;*/
 }
 
