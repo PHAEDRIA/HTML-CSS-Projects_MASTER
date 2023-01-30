@@ -264,7 +264,6 @@ section {
 }
 
 .wrap {
-    height: 100%;
     width: 100%;
     position: absolute;
     /*This ensures that images cannot render outside their container without forcing any scrollbars*/
@@ -484,7 +483,7 @@ FOOTER STYLES
 ---------------------------*/
 #footer {
     background-color: transparent;
-    color: #000;
+    color: rgb(248, 245, 245);
     text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 1);
     padding: 20px 50px 20px 50px;
     text-align: right;
