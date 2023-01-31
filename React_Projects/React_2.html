@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+    <title> LEARNING TO STYLE!!</title>
+    <meta charset="utf-8">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</Head>
+   
+
+<body>
+    <div id="like_button_container"></div>
+        <script>
+            const X = React.createElement;
+
+            class likeButton extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state = { liked: false };
+
+                }
+
+                render() {
+                    if (this.state.liked) {
+                    return 'You clicked the like button!';
+                }
+
+                return X(
+                    'button'
+                    { onClick: () => this.setState({liked: true}) },
+                    'Like'
+                );
+            }
+        }
+
+        </script>
+         
+    </body>
+</html>
