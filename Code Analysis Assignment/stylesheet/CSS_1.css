@@ -11,7 +11,8 @@ body {
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
-    font-family: Avant Garde, Helvetica;
+    font-family: "Trebuchet MS", optima;
+    color: #f4f4f4;
     font-size: 1.5vw; 
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
@@ -28,7 +29,7 @@ h1 {
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #1a1a1a; 
+    color: aqua; 
 }
 
 /* Heading 1 element hover effect */
@@ -46,10 +47,10 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify; /* This justifies the text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
-    font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
+    font-size: 1.0vw; /* Relative font sizing equal to 2.5% of the viewport width */
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
     padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
 }
@@ -73,7 +74,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: blue; /* This ensures all links are blue */
+    color: rgb(255, 0, 140); /* This ensures all links are blue */
     cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
     text-decoration: underline; /* This ensures all links are underlined */
 }
@@ -101,7 +102,7 @@ img:hover {
 /*Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
+    background-color:transparent;
 }
 /***** End of General Styling *****/
 
@@ -261,7 +262,7 @@ footer {
     bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: "Trebuchet MS", Optima;;
     letter-spacing: .1vw; /* This gives slight spacing between the letters */
     font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
@@ -275,7 +276,7 @@ footer {
     height: 1vw; /* The dots are sized relative to the viewport width */
     width: 1vw;
     margin: .25vw; /* adds additional spacing between the dots */ 
-    background-color: white; /* Makes the dots white */
+    background-color: rgb(253, 3, 157); /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
     display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
     transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
@@ -316,15 +317,26 @@ footer {
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
     height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the left columns */
+    background-color: #2c2c2c; /* Sets the background color of the left columns */
+    opacity: 0.9;
 }
 
 .Column_2 {
     float: left;
     width: 50%;
-    padding: 1.6%;
-    height: 450px;
-    background-color: #4d4d4d;
+    padding: 10px;
+    height: 400px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+    /* ADDED VIDEO */
+    
+#Github_Video {
+margin: auto;
+padding: 10px;
+height: 560px;
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -374,7 +386,8 @@ footer {
 .form-container {
     max-width: 49vw; /* Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
-    background-color: white; 
+    background-color: rgb(0, 0, 0); 
+    color: aqua;
 }
 
 /* Input fields */
@@ -383,8 +396,9 @@ footer {
     padding: .93vw; /* Adds padding to the input boxes */
     margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
     border: none; /* Removes the border from the input boxes */
-    background: Gainsboro; /* Sets the background color of the input boxes */
+    background: rgb(253, 250, 250); /* Sets the background color of the input boxes */
     font-size: 1vw; /* Relative font sizing based on the width of the viewport */
+    color: #f4f4f4;
 }
 
 /* General styling for all buttons */
@@ -402,34 +416,34 @@ button {
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
     color: white; /* This makes the text in the buttons white when hovered over */
-    background-color: black; /* The background of the button changes to black when hovered over */
+    background-color: rgb(255, 1, 149); /* The background of the button changes to black when hovered over */
     transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
-    border-color: silver; /* The border turns silver when the button is hovered over */
+    border-color: aqua; /* The border turns silver when the button is hovered over */
 }
 
 /* Submit button */
 .form-container .btn {
-    background-color: white; 
-    color: black;
-    border-color: black;
+    background-color: rgb(2, 2, 2); 
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 238, 255);
     margin-bottom: 1vh; /* Adds space between the submit button and the close button */
 }
 
 /* Close button */
 .form-container .cancel {
-    background-color: black;
+    background-color: rgb(8, 8, 8);
     color: white;
-    border-color: gray;
+    border-color: rgb(0, 247, 255);
 }
 
 /* Styling for close button on hover */
 .form-container .cancel:hover {
     color: white;
-    background-color: darkred;
+    background-color: rgb(255, 0, 149);
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
-    border-color: black;
+    border-color: rgb(3, 217, 255);
 }
 /***** End of Contact Form Styling *****/
 
